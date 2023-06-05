@@ -2,7 +2,7 @@
   <div>
     <h3 class="logo_style">
       <img src="../assets/images/logo.png" alt="" />
-      LOOPin
+      LoopIn
     </h3>
   </div>
 </template>
