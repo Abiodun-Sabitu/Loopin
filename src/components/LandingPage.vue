@@ -16,24 +16,14 @@
 <script>
 import Logo from "./Logo.vue";
 import HeroImage from "./HeroImage.vue";
-// import Login from "./Login.vue";
-// import ResetPassword from "./ResetPassword.vue";
-// import OTP from "./OTP.vue";
-// import CreateAccount from "./CreateAccount.vue";
 export default {
   name: "Landing Page",
   data() {
-    return {
-      hide: false,
-    };
+    return {};
   },
   components: {
     HeroImage,
     Logo,
-    // OTP,
-    // Login,
-    // ResetPassword,
-    // CreateAccount,
   },
 };
 </script>

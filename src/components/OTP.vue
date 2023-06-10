@@ -28,6 +28,7 @@
 
 <script>
 export default {
+  name: "OTP",
   data() {
     return {
       otpData: {

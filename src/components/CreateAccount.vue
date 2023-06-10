@@ -48,11 +48,15 @@
         >Create Account</el-button
       >
     </el-form-item>
+    <div class="go_back">
+      <router-link to="/login" class="switcher">Go back to Login</router-link>
+    </div>
   </el-form>
 </template>
 
 <script>
 export default {
+  name: "Sign Up-form",
   data() {
     return {
       formData: {
@@ -141,19 +145,5 @@ export default {
   background-color: #ebab34;
   margin-top: 15px;
   border: none;
-}
-
-.switcher {
-  text-align: center;
-  font-size: 0.9rem;
-  cursor: pointer;
-  color: #03045e;
-}
-
-.go_back {
-  text-align: end;
-  font-size: 0.9rem;
-  cursor: pointer;
-  color: #03045e;
 }
 </style>

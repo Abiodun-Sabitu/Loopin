@@ -8,10 +8,17 @@
     size="large"
   >
     <el-form-item label="Email" prop="email" :error="formErrors.email">
-      <el-input v-model="formData.email"></el-input>
+      <el-input
+        v-model="formData.email"
+        placeholder="John.Doe@GigglePay.com"
+      ></el-input>
     </el-form-item>
     <el-form-item label="Password" prop="password" :error="formErrors.password">
-      <el-input v-model="formData.password" type="password"></el-input>
+      <el-input
+        v-model="formData.password"
+        type="password"
+        placeholder="*********"
+      ></el-input>
     </el-form-item>
     <router-link :to="{ name: 'ResetPassword' }">
       <span class="forgot_pswd">Forgot Password?</span></router-link
@@ -28,6 +35,7 @@
 </template>
 <script>
 export default {
+  name: "login-form",
   data() {
     return {
       formData: {
@@ -94,12 +102,5 @@ export default {
   background-color: #ebab34;
   margin-top: 15px;
   border: none;
-}
-
-.forgot_pswd {
-  float: right;
-  font-size: 0.9rem;
-  cursor: pointer;
-  color: #03045e;
 }
 </style>

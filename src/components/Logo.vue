@@ -1,8 +1,9 @@
 <template>
   <div>
     <h2 class="logo_style">
-      <img src="../assets/images/logo.png" alt="" />
-      LoopIn
+      <router-link to="/login"
+        ><img src="../assets/images/logo.png" alt="" />LoopIn</router-link
+      >
     </h2>
   </div>
 </template>
@@ -15,7 +16,10 @@ export default {
 .logo_style {
   color: #03045e;
   margin: 5px 0px 0px 30px;
-  cursor: pointer;
+}
+
+a {
+  color: #03045e;
 }
 
 .logo_style img {

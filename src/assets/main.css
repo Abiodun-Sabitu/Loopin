@@ -15,7 +15,17 @@ a {
 .switcher {
   text-align: center;
   font-size: 0.9rem;
-  cursor: pointer;
+  color: #03045e;
+}
+
+.go_back {
+  text-align: end;
+  font-size: 0.9rem;
+}
+
+.forgot_pswd {
+  float: right;
+  font-size: 0.9rem;
   color: #03045e;
 }
 

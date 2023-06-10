@@ -10,23 +10,38 @@
     size="large"
   >
     <el-form-item label="Email" prop="email">
-      <el-input v-model="resetData.email" type="email"></el-input>
+      <el-input
+        v-model="resetData.email"
+        type="email"
+        placeholder="Enter your email"
+      ></el-input>
     </el-form-item>
     <el-form-item label="New Password" prop="password">
-      <el-input v-model="resetData.password" type="password"></el-input>
+      <el-input
+        v-model="resetData.password"
+        type="password"
+        placeholder="*********"
+      ></el-input>
     </el-form-item>
     <el-form-item label="Confirm Password" prop="confirmPassword">
-      <el-input v-model="resetData.confirmPassword" type="password"></el-input>
+      <el-input
+        v-model="resetData.confirmPassword"
+        type="password"
+        placeholder="*********"
+      ></el-input>
     </el-form-item>
     <el-form-item>
       <el-button type="primary" @click="submitForm">Reset Password</el-button>
     </el-form-item>
-    <div class="go_back">Go back to Login</div>
+    <div class="go_back">
+      <router-link to="/login" class="switcher">Go back to Login</router-link>
+    </div>
   </el-form>
 </template>
 
 <script>
 export default {
+  name: "Reset Password-form",
   data() {
     return {
       resetData: {
@@ -110,19 +125,5 @@ export default {
   background-color: #ebab34;
   margin-top: 15px;
   border: none;
-}
-
-.switcher {
-  text-align: center;
-  font-size: 0.9rem;
-  cursor: pointer;
-  color: #03045e;
-}
-
-.go_back {
-  text-align: end;
-  font-size: 0.9rem;
-  cursor: pointer;
-  color: #03045e;
 }
 </style>
