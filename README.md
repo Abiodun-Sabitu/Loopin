@@ -33,8 +33,3 @@ npm run build
 ```sh
 npm run lint
 ```
-
-## PrimeVue configuration
-
-- The primevue.config.js file contains all the imported primeVue components that were used in building the project \*
-- It also contains the ripple effect configurations for all the buttons used as well. \*
