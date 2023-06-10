@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h3 class="logo_style">
+    <h2 class="logo_style">
       <img src="../assets/images/logo.png" alt="" />
       LoopIn
-    </h3>
+    </h2>
   </div>
 </template>
 <script>
@@ -13,7 +13,7 @@ export default {
 </script>
 <style scoped>
 .logo_style {
-  color: #da940e;
+  color: #03045e;
   margin: 5px 0px 0px 30px;
   cursor: pointer;
 }

@@ -10,7 +10,7 @@ export default {
 </script>
 <style scoped>
 .office {
-  background: url(https://images.pexels.com/photos/2422294/pexels-photo-2422294.jpeg);
+  background: url(https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

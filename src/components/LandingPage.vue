@@ -1,8 +1,11 @@
 <template>
   <div class="main_container">
-    <main class="outline">
-      <section class="outline left_section">
+    <main>
+      <section class="left_section">
         <Logo />
+        <div class="entry_point_forms">
+          <router-view></router-view>
+        </div>
       </section>
       <section class="right_section">
         <HeroImage />
@@ -13,20 +16,47 @@
 <script>
 import Logo from "./Logo.vue";
 import HeroImage from "./HeroImage.vue";
+// import Login from "./Login.vue";
+// import ResetPassword from "./ResetPassword.vue";
+// import OTP from "./OTP.vue";
+// import CreateAccount from "./CreateAccount.vue";
 export default {
   name: "Landing Page",
   data() {
-    return {};
+    return {
+      hide: false,
+    };
   },
   components: {
     HeroImage,
     Logo,
+    // OTP,
+    // Login,
+    // ResetPassword,
+    // CreateAccount,
   },
 };
 </script>
 <style scoped>
 .outline {
   outline: 1px solid grey;
+}
+
+.entry_point_forms {
+  margin-inline: 30px;
+  /* outline: 1px solid yellow; */
+  padding: 25px;
+  background-color: white;
+  margin-top: 15%;
+  border-radius: 16px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 main {
@@ -41,14 +71,14 @@ main {
 }
 .main_container {
   /* background-color: rgb(225, 229, 242); */
-  background-color: #03045e;
+  background-color: white;
 }
 
 @media screen and (max-width: 768px) {
   .left_section {
     position: relative;
     z-index: 1;
-    background-color: teal;
+    /* background-color: teal; */
     min-width: 60%;
   }
   .right_section {
@@ -63,9 +93,12 @@ main {
   .left_section {
     position: relative;
     z-index: 1;
-    background-color: teal;
+    /* background-color: teal; */
     width: 70%;
     min-width: 100%;
+  }
+  .entry_point_forms {
+    margin-top: 30%;
   }
 }
 /* @media screen and (max-width: 767px) {
