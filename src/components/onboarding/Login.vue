@@ -24,13 +24,13 @@
       <span class="forgot_pswd">Forgot Password?</span></router-link
     >
     <el-form-item>
-      <el-button type="primary" @click="validateForm" class="m-4"
-        >Login</el-button
-      >
+      <!-- @click="validateForm" -->
+      <el-button type="primary" class="m-4">Login</el-button>
     </el-form-item>
-    <router-link class="switcher" :to="{ name: 'CreateAccount' }"
+    <router-link class="switcher" to="/create-account"
       >New Employee? <span>Create Account Here</span></router-link
     >
+    <p @click="navigateToDashboard">login</p>
   </el-form>
 </template>
 <script>
@@ -80,6 +80,9 @@ export default {
           // Form is invalid, handle the errors
         }
       });
+    },
+    navigateToDashboard() {
+      this.$router.push({ name: "Dashboard" });
     },
   },
 };

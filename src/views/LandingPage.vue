@@ -14,8 +14,8 @@
   </div>
 </template>
 <script>
-import Logo from "./Logo.vue";
-import HeroImage from "./HeroImage.vue";
+import Logo from "@/components/Logo.vue";
+import HeroImage from "../components/onboarding/HeroImage.vue";
 export default {
   name: "Landing Page",
   data() {
@@ -28,8 +28,8 @@ export default {
 };
 </script>
 <style scoped>
-.outline {
-  outline: 1px solid grey;
+:deep(.el-form-item__label) {
+  color: #03045e !important;
 }
 
 .entry_point_forms {

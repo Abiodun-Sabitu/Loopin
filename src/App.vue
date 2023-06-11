@@ -1,14 +1,9 @@
 <template>
   <div>
-    <LandingPage />
+    <router-view></router-view>
   </div>
 </template>
 <script>
-import LandingPage from "./components/onboarding/LandingPage.vue";
-export default {
-  components: {
-    LandingPage,
-  },
-};
+export default {};
 </script>
 <style></style>

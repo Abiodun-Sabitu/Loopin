@@ -29,9 +29,6 @@ a {
   font-size: 0.9rem;
   color: #03045e;
 }
-:deep(.el-form-item__label) {
-  color: #03045e; /* Customize the label color here */
-}
 
 h4 {
   font-size: 0.9rem;
