@@ -2,7 +2,7 @@
   <div>
     <h2 class="logo_style">
       <router-link to="/login"
-        ><img src="../assets/images/logo.png" alt="" />LoopIn</router-link
+        ><img src="@/assets/images/logo.png" alt="" />LoopIn</router-link
       >
     </h2>
   </div>

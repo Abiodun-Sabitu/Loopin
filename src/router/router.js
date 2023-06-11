@@ -8,17 +8,17 @@ const routes = [
   {
     path: "/login",
     name: "Login",
-    component: () => import("../components/Login.vue"),
+    component: () => import("../components/onboarding/Login.vue"),
   },
   {
     path: "/create-account",
     name: "CreateAccount",
-    component: () => import("../components/CreateAccount.vue"),
+    component: () => import("../components/onboarding/CreateAccount.vue"),
   },
   {
     path: "/reset-password",
     name: "ResetPassword",
-    component: () => import("../components/ResetPassword.vue"),
+    component: () => import("../components/onboarding/ResetPassword.vue"),
   },
 ];
 
