@@ -62,36 +62,4 @@ export default {
 };
 </script>
 
-<style scoped>
-:deep(.el-form-item__label) {
-  color: #03045e; /* Customize the label color here */
-}
-
-.el-button {
-  /* background-color: #03045e; */
-  background-color: #da940e;
-  margin-top: 15px;
-  border: none;
-}
-
-.el-button:hover {
-  /* background-color: #03045e; */
-  background-color: #ebab34;
-  margin-top: 15px;
-  border: none;
-}
-
-.switcher {
-  text-align: center;
-  font-size: 0.9rem;
-  cursor: pointer;
-  color: #03045e;
-}
-
-.go_back {
-  text-align: end;
-  font-size: 0.9rem;
-  cursor: pointer;
-  color: #03045e;
-}
-</style>
+<style scoped></style>
