@@ -1,11 +1,15 @@
 <template>
-  <div>
-    <aside><h1>sideBar Nav</h1></aside>
-  </div>
+  <aside>aside</aside>
 </template>
 <script>
 export default {
   name: "Sidebar",
 };
 </script>
-<style></style>
+<style>
+aside {
+  outline: 1px solid black;
+  width: 240px;
+  height: 100%;
+}
+</style>
