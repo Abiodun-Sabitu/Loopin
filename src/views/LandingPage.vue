@@ -15,7 +15,7 @@
 </template>
 <script>
 import Logo from "@/components/Logo.vue";
-import HeroImage from "../components/onboarding/HeroImage.vue";
+import HeroImage from "@/components/onboarding/HeroImage.vue";
 export default {
   name: "Landing Page",
   data() {

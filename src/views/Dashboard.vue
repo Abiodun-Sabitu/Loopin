@@ -1,7 +1,7 @@
 <template>
-  <div class="dashboard_wrapper">
-    <SideBar />
-    <MainContent />
+  <div>
+    <SideBar class="sidebar" id="sidebar" />
+    <MainContent id="main" />
   </div>
 </template>
 <script>
@@ -15,8 +15,4 @@ export default {
   },
 };
 </script>
-<style>
-.dashboard_wrapper {
-  display: flex;
-}
-</style>
+<style scoped></style>

@@ -30,7 +30,6 @@
     <router-link class="switcher" to="/create-account"
       >New Employee? <span>Create Account Here</span></router-link
     >
-    <p @click="navigateToDashboard">login</p>
   </el-form>
 </template>
 <script>
